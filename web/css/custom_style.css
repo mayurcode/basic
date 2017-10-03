@@ -1,0 +1,81 @@
+body{
+
+background: #a73737;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.navbar{
+
+  font-family: 'Varela Round', sans-serif;
+
+
+}
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 450px !important;
+}
+.carousel-caption{
+ color:yellow;
+}
+
+.grid-view{
+	
+	color:white;
+	font-weight:bold;
+}
+
+
+
+  // Class
+  .invisible {
+    visibility: hidden;
+  }
+
+  // Usage as a mixin
+  .element {
+    @include invisible;
+  }
+// Used for FA-Icon Colors
+.iconSocial .fa-facebook-square {
+  color: blue
+}
+.iconSocial .fa-instagram {
+  color: red
+}
+.foot{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #480048;
+  text-align: center;
+}
+//For navbar Hover effect
+/* change the link color */
+.navbar .navbar-nav .nav-link {
+    color: #ffffff;
+}
+/* change the color of active or hovered links */
+.navbar .nav-item .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+.navbar .nav-item.active .nav-link{
+    color: #ffffff;
+}
+ul.navbar-nav li { list-style-type:none; float:left; padding-left:30px;}
+ul.navbar-nav li a { text-decoration:none; position:relative; padding:5px;}
+ul.navbar-nav li a:before { border-left:5px solid #8e44ad; border-right:5px solid #8e44ad; transform:scale(1,0);}
+ul.navbar-nav li a:after { border-top:5px solid #8e44ad; border-bottom:5px solid #8e44ad; transform:scale(0,1);}
+ul.navbar-nav li a:before, ul.navbar-nav li a:after { content:""; position:absolute; top:0; right:0; bottom:0; left:0; transition:opacity 0.35s ease, transform 0.35s ease;}
+
+@media all and (max-width:640px){.header-wrapper .inline-list>li{margin-left:0;}
+header-wrapper{padding:0 10px;}
+.navbar{padding-bottom:55px;margin-bottom:40px;overflow-y:scroll;}
+}
